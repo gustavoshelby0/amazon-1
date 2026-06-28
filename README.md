@@ -2,18 +2,15 @@
 
 # Problema de Negócio
 
-Problema de Oferta vs. Demanda (Vazamento de Receita)
-Os dados: Existem centenas de ocorrências de "No Driver Found" (Nenhum Motorista Encontrado) espalhadas por várias localidades e horários.
-
-O problema de negócio: A plataforma está deixando dinheiro na mesa. Toda vez que um cliente não encontra motorista, a Uber perde 100% da receita daquela viagem.
-
-Impacto: Perda de Market Share em regiões periféricas (ex.: Noida Extension, Greater Noida) e ineficiência na precificação dinâmica (surge pricing) para atrair motoristas para essas áreas no momento certo.
+A Amazon é o maior marketplace do mundo, com milhões de produtos em seu catálogo. No entanto, manter um portfólio extenso gera custos significativos de armazenagem, logística e gestão de fornecedores
 
 # Premissas da análise
 
-Foi analisado o fenômeno "No Driver Found" (Nenhum Motorista Encontrado).
-Foram analisadas 150.000 corridas da Uber. 
-Os dados são referentes ao ano de 2024, e as corridas analisadas foram realizadas na Índia.
+Dados de 100.000 vendas feitas pela Amazon.
+
+Vendas realizadas nos Estados Unidos, Canadá, Índia, Reino Unido e Austrália.
+
+Os dados analisados correspondem ao período de 2020 a 2024.
 
 
 # Estratégia da solução
@@ -24,7 +21,7 @@ O método Fato-Dimensão foi usado para desenvolver a análise de dados.
 
 As perguntas abertas são um tipo de demanda muito comum em análise de dados nas quais a demanda possui N possíveis soluções e cabe ao analista de dados avaliar as possibilidades e escolher a alternativa com o maior retorno e o menor esforço possível. Para essa análise, foi definida a seguinte pergunta aberta:
 
-como a Uber pode resolver o problema de "No Driver Found" (Nenhum Motorista Encontrado)
+Como estão as vendas da Amazon? A empresa tem muitos produtos bons ou é simplesmente um armazém de brechó?
 
 # Passo 2: Transformar pergunta aberta em fechada
 
@@ -32,11 +29,11 @@ As perguntas fechadas são um tipo de demanda muito comum na área de análise d
 
 Para essa análise, foi definida a seguinte pergunta fechada:
 
-Pergunta Fechada: Calcule a taxa de corridas perdidas pela Uber por causa do fenômeno "No Driver Found".
+Pergunta Fechada: Faça um gráfico de Pareto mostrando todas as categorias da Amazon. Veja quais categorias pagam as contas da empresa e quais são simplesmente peso morto no estoque.
 
 # Passo 3: Definição da Coluna Fato
 
-O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "Booking Status" mostra se a corrida foi concluída ou não.
+O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "OrderID" mostra quantas vendas foram feitas, quando e feito uma contagem e segmentacao por categoria...
 
 # Passo 4: Identificação das Dimensões
 
