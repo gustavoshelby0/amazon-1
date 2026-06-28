@@ -2,7 +2,7 @@
 
 # Problema de Negócio
 
-A Amazon é o maior marketplace do mundo, com milhões de produtos em seu catálogo. No entanto, manter um portfólio extenso gera custos significativos de armazenagem, logística e gestão de fornecedores
+A Amazon é o maior marketplace do mundo, com milhões de produtos em seu catálogo. No entanto, manter um portfólio extenso gera custos significativos de armazenagem, logística e gestão de fornecedores.
 
 # Premissas da análise
 
@@ -11,7 +11,6 @@ Dados de 100.000 vendas feitas pela Amazon.
 Vendas realizadas nos Estados Unidos, Canadá, Índia, Reino Unido e Austrália.
 
 Os dados analisados correspondem ao período de 2020 a 2024.
-
 
 # Estratégia da solução
 
@@ -33,26 +32,25 @@ Pergunta Fechada: Faça um gráfico de Pareto mostrando todas as categorias da A
 
 # Passo 3: Definição da Coluna Fato
 
-O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "OrderID" mostra quantas vendas foram feitas, quando e feito uma contagem e segmentacao por categoria...
+O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse caso, a coluna "OrderID" mostra quantas vendas foram feitas, quando, e é feita uma contagem e segmentação por categoria...
 
 # Passo 4: Identificação das Dimensões
 
 As colunas foram agrupadas em dimensões comuns que fornecem mais detalhes sobre o Fato que será analisado. Foram organizadas as seguintes dimensões:
 
-Tempo: OrderDate. (Base cronológica para análises de sazonalidade e tendências).
+**Tempo:** OrderDate. (Base cronológica para análises de sazonalidade e tendências).
 
-Produto e Marca: ProductID, ProductName, Category, Brand. (Detalhamento do item vendido para análise de portfólio e desempenho por categoria).
+**Produto e Marca:** ProductID, ProductName, Category, Brand. (Detalhamento do item vendido para análise de portfólio e desempenho por categoria).
 
-Cliente e Vendedor: CustomerID, CustomerName, SellerID. (Identificação das partes envolvidas na transação).
+**Cliente e Vendedor:** CustomerID, CustomerName, SellerID. (Identificação das partes envolvidas na transação).
 
-Valores e Custos: Quantity, UnitPrice, Discount, Tax, ShippingCost, TotalAmount. (Métricas financeiras da venda; TotalAmount é a métrica central de faturamento).
+**Valores e Custos:** Quantity, UnitPrice, Discount, Tax, ShippingCost, TotalAmount. (Métricas financeiras da venda; TotalAmount é a métrica central de faturamento).
 
-Pagamento e Status: PaymentMethod, OrderStatus. (OrderStatus é a variável alvo para classificação do resultado do pedido).
+**Pagamento e Status:** PaymentMethod, OrderStatus. (OrderStatus é a variável-alvo para classificação do resultado do pedido).
 
-Localização: City, State, Country. (Base geográfica para análises regionais de desempenho).
+**Localização:** City, State, Country. (Base geográfica para análises regionais de desempenho).
 
-Controle: OrderID. (Identificador único para rastreabilidade do registro).
-
+**Controle:** OrderID. (Identificador único para rastreabilidade do registro).
 
 # Passo 5: Hipóteses Analíticas
 
@@ -64,9 +62,9 @@ Controle: OrderID. (Identificador único para rastreabilidade do registro).
 
 **H4:** O lucro de muitas categorias é negativo, indicando que os custos de tráfego e aquisição de clientes superam o ganho obtido por venda.
 
-H5: quais marcas tiveram maior participação nas vendas?
+H5: quais marcas tiveram maior participação nas vendas?
 
-Fiz no início apenas 4 Hipóteses para quebrar o gelo. Isso é uma análise exploratória do dataframe com base na pergunta fechada que o Analista de Dados Sr (Gustavo Shelby) me sugeriu.
+Fiz no início apenas 4 Hipóteses para quebrar o gelo. Isso é uma análise exploratória do dataframe com base na pergunta fechada que o Analista de Dados Sr. (Gustavo Shelby) me sugeriu.
 
 **Hipótese Inicial → Rodar Excel/Análise → Obter Insight → Questionar o Insight → Gerar Nova Hipótese → Rodar Nova Análise.**
 
@@ -85,7 +83,7 @@ Fiz no início apenas 4 Hipóteses para quebrar o gelo. Isso é uma análise exp
 
 **H4:** O lucro de muitas categorias é negativo, indicando que os custos de tráfego e aquisição de clientes superam o ganho obtido por venda.
 
-H5: quais marcas tiveram maior participação nas vendas?
+H5: quais marcas tiveram maior participação nas vendas?
 
 # Insights da análise
 
@@ -103,5 +101,3 @@ Realizar uma auditoria na base de dados para identificar possíveis falhas de co
 Comunicar o CEO e a gerência sobre os problemas identificados, destacando que os dados atuais podem não refletir a realidade do negócio.
 
 Recomendar que decisões estratégicas relevantes, como expansão, investimentos ou mudanças operacionais significativas, não sejam tomadas com base na base de dados atual até que sua qualidade e confiabilidade sejam validadas.
-
-
