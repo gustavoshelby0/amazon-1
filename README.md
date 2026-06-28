@@ -39,17 +39,19 @@ O Fato é a coluna de interesse que representa o ponto focal da análise. Nesse 
 
 As colunas foram agrupadas em dimensões comuns que fornecem mais detalhes sobre o Fato que será analisado. Foram organizadas as seguintes dimensões:
 
-Tempo e Data (Contexto Temporal): Date, Time. (Fornece a base cronológica para análise de sazonalidade, picos de demanda e horários de pico).
+Tempo: OrderDate. (Base cronológica para análises de sazonalidade e tendências).
 
-Localização e Veículo (Logística e Percurso): Vehicle Type, Pickup Location, Drop Location. (Detalha a estrutura operacional da viagem, incluindo o modal utilizado e os pontos de origem e destino).
+Produto e Marca: ProductID, ProductName, Category, Brand. (Detalhamento do item vendido para análise de portfólio e desempenho por categoria).
 
-Valores e Distância (Métricas Quantitativas da Corrida): Avg VTAT, Avg CTAT, Booking Value, Ride Distance. (Reúne as principais medidas numéricas que servirão como base para os cálculos de performance, faturamento e eficiência de tempo).
+Cliente e Vendedor: CustomerID, CustomerName, SellerID. (Identificação das partes envolvidas na transação).
 
-Avaliações e Pagamento (Experiência e Quitação): Driver Ratings, Customer Rating, Payment Method. (Agrupa as percepções de qualidade tanto do motorista quanto do cliente, além da forma de pagamento utilizada).
+Valores e Custos: Quantity, UnitPrice, Discount, Tax, ShippingCost, TotalAmount. (Métricas financeiras da venda; TotalAmount é a métrica central de faturamento).
 
-Cancelamentos e Incompletude (Motivos de Falha): Reason for cancelling by Customer, Driver Cancellation Reason, Incomplete Rides Reason. (Centraliza os fatores qualitativos e categóricos que explicam as interrupções e insucessos na operação).
+Pagamento e Status: PaymentMethod, OrderStatus. (OrderStatus é a variável alvo para classificação do resultado do pedido).
 
-Controle e Identificação do Registro: Booking ID, Customer ID, Booking Status, Cancelled Rides by Customer, Cancelled Rides by Driver, Incomplete Rides. (Aqui estão os identificadores únicos para rastreabilidade, as contagens de eventos críticos e o Booking Status, que funciona como a variável de desfecho (alvo) para classificação do resultado final da reserva).
+Localização: City, State, Country. (Base geográfica para análises regionais de desempenho).
+
+Controle: OrderID. (Identificador único para rastreabilidade do registro).
 
 
 # Passo 5: Hipóteses Analíticas
