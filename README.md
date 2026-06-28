@@ -56,15 +56,15 @@ Controle: OrderID. (Identificador único para rastreabilidade do registro).
 
 # Passo 5: Hipóteses Analíticas
 
-H1: A taxa de corridas perdidas pela Uber é de 2% quando olhado para o "No Driver Found".
+**H1:** Não existe a Lei de Pareto na Amazon. As categorias vendem de forma relativamente equilibrada.
 
-H2: O "No Driver Found" só acontece quando o passageiro está no ponto de partida na cidade grande.
+**H2:** Apenas duas categorias não apresentam vendas. As demais vendem de forma uniforme.
 
-H3: O "No Driver Found" é alto quando o ponto de desembarque é na cidade grande.
+**H3:** O faturamento por categoria é baixo na maior parte das categorias, mostrando que as receitas estão distribuídas entre diversos segmentos.
 
-H4: O "No Driver Found" tem a maior taxa quando é no Uber XL, porque esse veículo tem pouca disponibilidade.
+**H4:** O lucro de muitas categorias é negativo, indicando que os custos de tráfego e aquisição de clientes superam o ganho obtido por venda.
 
-H5: O "No Driver Found" acontece com maior frequência à noite, no período noturno (6 às 12pm).
+H5: quais marcas tiveram maior participação nas vendas?
 
 Fiz no início apenas 4 Hipóteses para quebrar o gelo. Isso é uma análise exploratória do dataframe com base na pergunta fechada que o Analista de Dados Sr (Gustavo Shelby) me sugeriu.
 
@@ -77,27 +77,31 @@ Fiz no início apenas 4 Hipóteses para quebrar o gelo. Isso é uma análise exp
 
 # Passo 7: Priorização das Hipóteses Analíticas
 
-H1: A taxa de corridas perdidas pela Uber é de 2% quando olhado para o "No Driver Found".
+**H1:** Não existe a Lei de Pareto na Amazon. As categorias vendem de forma relativamente equilibrada.
 
-H2: O "No Driver Found" só acontece quando o passageiro está no ponto de partida na cidade grande.
+**H2:** Apenas duas categorias não apresentam vendas. As demais vendem de forma uniforme.
 
-H3: O "No Driver Found" é alto quando o ponto de desembarque é na cidade grande.
+**H3:** O faturamento por categoria é baixo na maior parte das categorias, mostrando que as receitas estão distribuídas entre diversos segmentos.
 
-H4: O "No Driver Found" tem a maior taxa quando é no Uber XL, porque esse veículo tem pouca disponibilidade.
+**H4:** O lucro de muitas categorias é negativo, indicando que os custos de tráfego e aquisição de clientes superam o ganho obtido por venda.
 
-H5: O "No Driver Found" acontece com maior frequência à noite, no período noturno (6 às 12pm).
+H5: quais marcas tiveram maior participação nas vendas?
 
 # Insights da análise
 
 # Resultados
 
 **📥 Baixe a apresentação em PowerPoint (clique no link e, em seguida, em "Download" ou "View raw"):**  
-  [https://docs.google.com/presentation/d/1jrQ17n-un9UXdU5uls8ValpbZDV1kk1F/edit?usp=sharing&ouid=114029927907630112086&rtpof=true&sd=true](https://docs.google.com/presentation/d/1jrQ17n-un9UXdU5uls8ValpbZDV1kk1F/edit?usp=sharing&ouid=114029927907630112086&rtpof=true&sd=true)
+  [https://docs.google.com/presentation/d/1NhQ-8F8iABrALSBeC_FBwQPg6H6-_DK8/edit?usp=sharing&ouid=114029927907630112086&rtpof=true&sd=true](https://docs.google.com/presentation/d/1NhQ-8F8iABrALSBeC_FBwQPg6H6-_DK8/edit?usp=sharing&ouid=114029927907630112086&rtpof=true&sd=true)
 
 # Próximos passos
 
-Fazer o acompanhamento das futuras mudanças que a diretoria poderá implementar na cidade de Delhi (Índia).
+Entrar em contato com o engenheiro de dados para entender as fontes de dados da empresa e verificar se os dados coletados estão íntegros e consistentes.
 
-Este é o retrato do sintoma. Na próxima fase, precisamos responder: isso acontece porque as corridas têm baixo valor monetário para o motorista? Ou porque a distância até o embarque é muito grande?
+Realizar uma auditoria na base de dados para identificar possíveis falhas de coleta, processamento, integração ou modelagem que possam estar comprometendo as análises.
 
-Para isso, será necessário cruzar os 7% de perdas por "No Driver Found" com o tempo médio de espera dos motoristas por região, e com o valor médio recebido por corrida, a fim de identificar a principal causa do problema.
+Comunicar o CEO e a gerência sobre os problemas identificados, destacando que os dados atuais podem não refletir a realidade do negócio.
+
+Recomendar que decisões estratégicas relevantes, como expansão, investimentos ou mudanças operacionais significativas, não sejam tomadas com base na base de dados atual até que sua qualidade e confiabilidade sejam validadas.
+
+
